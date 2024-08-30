@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+      {% block body %}
+
+    <div class="row text-center">
+
+       {{ form_start(form) }}
+       <div class="my-custom-class-for-errors">
+           {{ form_errors(form) }}
+       </div>
+
+       <div class="row">
+          ...
+             {{ form_label(form.objet, "Mon libellé a été modifié") }}
+             {{ form_widget(form.objet, {'attr': {'class': 'btn-light'} }) }}
+             {{ form_errors(form.objet) }}
+          ...
+       </div>
+       {{ form_end(form) }}
+    </div>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
